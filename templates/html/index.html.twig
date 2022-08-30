@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HtmlController!{% endblock %}
+
+{% block body %}
+<!-- Page Heading -->
+                    <center><h1 class="h3 mb-4 text-gray-800">HTML</h1></center>
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+
+                            <!-- Circle Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">INTRODUCTION</h6>
+                                </div>
+
+                                <div class="card-body">
+                                    <p>L'HTML est un langage informatique utilisé sur l'internet. Ce langage est utilisé pour créer des pages web. 
+                                    L'acronyme signifie HyperText Markup Language, ce qui signifie en français "langage de balisage d'hypertexte". 
+                                    Cette signification porte bien son nom puisqu'effectivement ce langage permet de réaliser de l'hypertexte à base d'une structure de balisage.<br>
+
+                                    Ce n'est pas à proprement parlé un langage de programmation, mais plutôt un langage qui permet de mettre en forme du contenu. 
+                                    Les balises permettent de mettre en forme le texte et de placer des éléments interactif, tel des liens, des images ou bien encore des animations.
+                                    Ces éléments ne sont pas dans le code source d'une page codé en HTML mais "à coté" et la page en HTML ne fait que reprendre ces éléments.
+                                    Pour visualiser une page en HTML il est nécessaire d'utiliser un navigateur web.<br>
+
+                                    La plupart du temps d'autres langages informatique sont associé à une page codé en HTML. 
+                                    Par exemple le CSS, qui permet de mettre en forme le contenu d'une page codé en HTML.
+                                    Il y a également des langage informatique qui dépendent entièrement du HTML, tel le Javascript.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            {# <!-- Brand Buttons -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Brand Buttons</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>Google and Facebook buttons are available featuring each company's respective
+                                        brand color. They are used on the user login and registration pages.</p>
+                                    <p>You can create more custom buttons by adding a new color variable in the
+                                        <code>_variables.scss</code> file and then using the Bootstrap button variant
+                                        mixin to create a new style, as demonstrated in the <code>_buttons.scss</code>
+                                        file.</p>
+                                    <a href="#" class="btn btn-google btn-block"><i class="fab fa-google fa-fw"></i>
+                                        .btn-google</a>
+                                    <a href="#" class="btn btn-facebook btn-block"><i
+                                            class="fab fa-facebook-f fa-fw"></i> .btn-facebook</a>
+
+                                </div>
+                            </div> #}
+
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">BASE HTML</h6>
+                                </div>
+                                <div class="card-body">
+                                       <h5> La déclaration <code>!DOCTYPE</code> </h5>
+                                       <p> La  <code>!DOCTYPE</code> déclaration représente le type de document et aide les navigateurs à afficher correctement les pages Web.
+                                        Il ne doit apparaître qu'une seule fois, en haut de la page (avant toute balise HTML).<br>
+                                        La  <code>!DOCTYPE</code> déclaration n'est pas sensible à la casse.<br>
+                                        La  <code>!DOCTYPE</code> déclaration pour HTML5 est :<code>!DOCTYPE html</code></p><br>
+
+                                        <h5> L'en tête de HTML</code> </h5>
+                                        Les titres HTML sont définis avec les balises <code>h1</code>à <code>h6</code><br>
+                                        <code>h1</code>définit la rubrique la plus importante.<br>
+                                        <code>h6</code>définit la rubrique la moins importante.
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+{% endblock %}

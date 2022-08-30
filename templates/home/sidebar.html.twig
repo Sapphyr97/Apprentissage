@@ -1,0 +1,174 @@
+ 
+     <div id="wrapper">
+ <!-- Sidebar -->
+        <div class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">COURS</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="{{path("app_home")}} ">
+                    <h2>Acceuil</h2>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+               <h3>LANGUAGES</h3>
+            </div>
+
+
+{# <!------------------------------------------------- Nav Item - HTML ----------------------------------------------------> #}
+           <center>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{path("app_html")}}"  aria-expanded="true" > 
+                    <u><h4>HTML</h4></u>  
+                </a>
+                <a data-bs-toggle="collapse" href="#collapselala" ><span>Cours</span></a><br>
+                    <div id="collapselala" class="collapse" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Cours</h6>
+                            <a class="collapse-item" href="{{path("app_html_BC")}}">Balises Courantes</a>
+                            <a class="collapse-item" href="{{path("app_html_BE")}}">Balises Elémentaires</a>
+                        </div>
+                    </div> 
+                <a data-bs-toggle="collapse" href="#collapselalan" ><span>Exercices</span></a>
+                    <div id="collapselalan" class="collapse"data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Exercices</h6>
+                            <a class="collapse-item" href="{{path("app_html_S1")}}">Série 1</a>
+                            <a class="collapse-item" href="{{path("app_html_S2")}}">Série 2</a>
+                        </div>
+                    </div>
+            </li>
+
+            
+
+{# <!------------------------------------------------- Nav Item - CSS ----------------------------------------------------> #}
+        
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{path("app_css")}}"  aria-expanded="true" > 
+                    <h4>CSS</h4>  
+                </a>
+                <a data-bs-toggle="collapse" href="#collapseloulou" ><span>Cours</span></a><br>
+                    <div id="collapseloulou" class="collapse" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Cours</h6>
+                            <a class="collapse-item" href="{{path("app_css_select")}}">Sélecteurs</a>
+                            <a class="collapse-item" href="{{path("app_css_CB")}}">Couleurs et Bordures</a>
+                            <a class="collapse-item" href="{{path("app_css_pense")}}">Pense-Bête</a>
+                        </div>
+                    </div> 
+                <a data-bs-toggle="collapse" href="#collapselouloun" ><span>Exercices</span></a>
+                    <div id="collapselouloun" class="collapse"data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Exercices</h6>
+                            <a class="collapse-item" href="{{path("app_css_S1")}}">Série 1</a>
+                            <a class="collapse-item" href="{{path("app_css_S2")}}">Série 2</a>
+                        </div>
+                    </div>
+            </li>
+
+
+
+   {# <!------------------------------------------------- Nav Item - JAVASCRIPT ----------------------------------------------------> #}
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{path("app_js")}}"  aria-expanded="true" > 
+                    <h4>JAVASCRIPT</h4>  
+                </a>
+                <a data-bs-toggle="collapse" href="#collapsechou" ><span>Cours</span></a><br>
+                    <div id="collapsechou" class="collapse" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Cours</h6>
+                            <a class="collapse-item" href="{{path("app_js_algo")}}">Les Algorithmes</a>
+                            <a class="collapse-item" href="{{path("app_js_function")}}">Les Fonctions</a>
+                        </div>
+                    </div> 
+                <a data-bs-toggle="collapse" href="#collapsechouN" ><span>Exercices</span></a>
+                    <div id="collapsechouN" class="collapse"data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Exercices</h6>
+                            <a class="collapse-item" href="{{path("app_js_algorithme")}}">Algorithme</a>
+                            <a class="collapse-item" href="{{path("app_js_jquery")}}">Jquery</a>
+                        </div>
+                    </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+             <div class="sidebar-heading">
+               <h3>FRAMEWORKS</h3>
+            </div>
+
+
+
+
+        {# <!------------------------------------------------- Nav Item - PHP ----------------------------------------------------> #}
+
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="{{path("app_php")}}"  aria-expanded="true" > 
+                    <h4>PHP</h4>  
+                </a>
+                <a data-bs-toggle="collapse" href="#collapsephp" ><span>Cours</span></a><br>
+                    <div id="collapsephp" class="collapse" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Cours</h6>
+                            <a class="collapse-item" href="{{path("app_js_algo")}}">Les Algorithme</a>
+                            <a class="collapse-item" href="{{path("app_js_function")}}">Les Fonctions</a>
+                        </div>
+                    </div> 
+                <a data-bs-toggle="collapse" href="#collapsephpp" ><span>Exercices</span></a>
+                    <div id="collapsephpp" class="collapse"data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Exercices</h6>
+                            <a class="collapse-item" href="{{path("app_js_algorithme")}}">Les exos</a>
+                            <a class="collapse-item" href="{{path("app_js_jquery")}}">Série</a>
+                        </div>
+                    </div>
+            </li>
+
+               
+               
+               
+           
+        {# <!------------------------------------------------- Nav Item - SYMFONY ----------------------------------------------------> #}
+
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="{{path("app_symfony")}}"  aria-expanded="true" > 
+                    <h4>SYMFONY</h4>  
+                </a>
+                <a data-bs-toggle="collapse" href="#collapsesymfony" ><span>Cours</span></a><br>
+                    <div id="collapsesymfony" class="collapse" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Cours</h6>
+                            <a class="collapse-item" href="{{path("app_js_algo")}}">Les entités</a>
+                            <a class="collapse-item" href="{{path("app_js_function")}}">User, Authentification</a>
+                            <a class="collapse-item" href="{{path("app_js_jquery")}}"> Register,Formulaire</a>
+                            <a class="collapse-item" href="{{path("app_js_jquery")}}"> Password,Reset</a>
+                            <a class="collapse-item" href="{{path("app_js_algorithme")}}">Le CRUD</a>
+                            <a class="collapse-item" href="{{path("app_js_algorithme")}}">Produit,Panier</a>
+                           
+                        </div>
+                    </div> 
+            </li>
+    </center>
+
+        </div>
+        <!-- End of Sidebar -->
+
+        <div>

@@ -1,0 +1,164 @@
+{% extends 'base.html.twig' %}
+{% block title %}Javascript{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-1 text-gray-800">JQUERY</h1>
+                    <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
+                            href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
+                        below were created to extend this theme past the default utility classes built into Bootstrap's
+                        framework.</p>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Border Left Utilities -->
+                        <div class="col-lg-5">
+
+                            <div class="card mb-4 py-3 border-left-primary ">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Ecrire un algorithme qui demande à l’utilisateur un nombre compris entre 1 et 3 jusqu’à ce 
+                                                        que la réponse convienne</td>
+                                                    <td> let u=2 <br>
+                                                         while (u<1 || 3<u)
+                                                            <p> { 
+                                                                 if ( u>1 || 3>u) </p>
+                                                                { u='Saisie Erronée'}
+                                                                }<br>
+                                                                 console.log (u)
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="card mb-4 py-3 border-left-secondary">
+                                 <div class="card-body">
+                                    <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Ecrire un algorithme qui permet initialise deux variables 
+                                                        par Emma  et nuel  Afficher en concatenant les deux chaines la chaine complete.
+                                                        ( utilisation de l'opérateur de concatenation de chaine de caractères +)*/</td>
+                                                    <td>let m = 'emma'<br>
+                                                        let n= 'nuel'<br>
+                                                        let c= m+n<br>
+                                                        console.log (c)
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div>
+ 
+                           
+                          
+
+                            <div class="card mb-4 py-3 border-left-dark">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Ecrire un programme qui demande de renseigner son salaire,  puis qui calcule et affiche le montant de
+                                                        son impôt estimé à 13% de son salaire.
+                                                        Salaire : 1950 euro</td>
+                                                    <td>let s = 1950 ;<br>
+                                                        const p = 0.13;<br>
+                                                        sb =  s-(s*p);<br>
+                                                        console.log(sb);
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div> 
+
+                        </div> 
+
+                        <!-- Border Bottom Utilities -->
+                         <div class="col-lg-6">
+
+                            <div class="card mb-4 py-3 border-bottom-primary">
+                                <div class="card-body">
+                                    .border-bottom-primary
+                                </div>
+                            </div>
+
+                            <div class="card mb-4 py-3 border-bottom-secondary">
+                                <div class="card-body">
+                                    .border-bottom-secondary
+                                </div>
+                            </div>
+
+                            <div class="card mb-4 py-3 border-bottom-success">
+                                <div class="card-body">
+                                    .border-bottom-success
+                                </div>
+                            </div>
+
+                            <div class="card mb-4 py-3 border-bottom-info">
+                                <div class="card-body">
+                                    .border-bottom-info
+                                </div>
+                            </div>
+
+                            <div class="card mb-4 py-3 border-bottom-warning">
+                                <div class="card-body">
+                                    .border-bottom-warning
+                                </div>
+                            </div>
+
+                            <div class="card mb-4 py-3 border-bottom-danger">
+                                <div class="card-body">
+                                    .border-bottom-danger
+                                </div>
+                            </div>
+
+                            <div class="card mb-4 py-3 border-bottom-dark">
+                                <div class="card-body">
+                                    .border-bottom-dark
+                                </div>
+                            </div>
+
+                        </div> 
+
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+
+
+ {% endblock %}

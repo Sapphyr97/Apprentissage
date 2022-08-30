@@ -1,0 +1,409 @@
+  {% extends 'base.html.twig' %}
+{% block title %}PHP{% endblock %}
+
+{% block body %}
+  
+   <h1 class="h3 mb-4 text-gray-800">Tableau</h1>
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+
+{# --------------------------------------------------------------------OPERATION-------------------------------------------------------------------                             #}
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Opérations</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>SOMME</p>
+                                   
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td> Créer une fonction from scratch qui s'appelle somme(). Elle prendra deux arguments de type int.<br>
+                                                      Elle devra retourner la somme des deux. Exemple : argument 1 = 5 Argument 2 = 5 ; Resultat : 10</td>
+                                                    <td> <?php <br>
+                                                    function somme
+                                                    (int $Argument1 = 5, int $Argument2= 5)<br>
+                                                    {
+                                                        return  $Argument1 + $Argument2 ;
+                                                    }
+                                                    ?>
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+                                   
+                                     <p>SOUSTRACTION</p>
+                                   
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td> Créer une fonction from scratch qui s'appelle soustraction().<br>
+                                                      Elle prendra deux arguments de type int. Elle devra retourner la soustraction des deux.<br>
+                                                       Exemple : argument 1 = 5 Argument 2 = 5 ; Resultat : 0</td>
+                                                    <td><?php<br>
+                                                    function soustraction
+                                                    (int $argument1 = 5, int $Argument2 = 5 )<br>{
+                                                        return $argument1 - $Argument2;
+                                                    }
+                                                    ?>
+
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+
+                                     <p>MULTIPLICATION</p>
+                                   
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td> Créer une fonction from scratch qui s'appelle multiplication().<br>
+                                                      Elle prendra deux arguments de type int. Elle devra retourner la multiplication des deux. <br>
+                                                      Exemple : argument 1 = 5 Argument 2 = 5 ; Resultat : 25</td>
+                                                    <td><?php<br>                                                                                 
+                                                        function multiplication(int $argumen1=5, int $Argument2 = 5)<br>{
+                                                            return $argumen1 * $Argument2;
+                                                        }
+                                                        ?>
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            
+{# ----------------------------------------------------------------------- COMPARAISON --------------------------------------------------------------------------------------- #}
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">COMPARAISON</h6>
+                                </div>
+                                <div class="card-body">
+                                     <p>IL EST MAJEUR</p>
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Créer une fonction from scratch qui s'appelle estIlMajeure().<br>
+                                                      Elle prendra un argument de type int. Elle devra retourner un boolean.<br>
+                                                       Si age >= 18 elle doit retourner true si age < 18 elle doit retourner false <br>
+                                                      Exemple : age = 5 ==> false age = 34 ==> true
+                                                    </td>
+                                                    <td>
+                                                        function estIlMajeure(int $age)
+                                                        {<br>
+                                                            if ($age >=18){<br>
+                                                                return true;<br>
+                                                            }else{<br>
+                                                                return false;<br>
+                                                            }
+                                                        }
+                                                    
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+
+
+                                    <p>PLUS GRAND</p>
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Créer une fonction from scratch qui s'appelle plusGrand().<br>
+                                                      Elle prendra deux arguments de type int. Elle devra retourner le plus grand des deux.<br>
+
+                                                    </td>
+                                                    <td>
+                                                        function plusGrand(int $argument1, int $argument2){
+                                                        <br>
+                                                            if($argument1 > $argument2){<br>
+                                                                  return $argument1;<br>
+                                                            }else{<br>
+                                                               return $argument2;<br>
+                                                            }
+                                                        }
+                                                    
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+
+
+                                    <p>PLUS PETIT AVEC 2 ARGUMENTS</p>
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Créer une fonction from scratch qui s'appelle plusPetit().<br>
+                                                       Elle prendra deux arguments de type int. <br>
+                                                       Elle devra retourner le plus petit des deux. <br>
+                                                     
+                                                    </td>
+                                                    <td>
+                                                        function plusPetit(int $argument1, int $argument2){<br>
+                                                             if($argument1 <$argument2){<br>
+                                                                  return $argument1;<br>
+                                                            }else{<br>
+                                                                  return $argument2;<br>
+                                                            }
+                                                        }
+                                                    
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+
+                                    <p>PLUS PETIT AVEC 3 ARGUMENTS</p>
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Créer une fonction from scratch qui s'appelle plusPetit().<br>
+                                                     . Elle prendra trois arguments de type int.<br>
+                                                      Elle devra retourner le plus petit des trois.<br>
+                                                    
+                                                    </td>
+                                                    <td>
+                                                        function plusPetit(int $argument1, int $argument2, int $argument3){<br>
+                                                           return min($argument1, $argument2, $argument3);<br>
+                                                                return true;<br>
+                                                        }
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+{# -------------------------------------------------------FUNCTION TABLEAU ---------------------------------------------------------------------- #}
+                        <div class="col-lg-6">
+
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">FUNCTION TABLEAU</h6>
+                                </div>
+                                <div class="card-body">
+                                       <p>PREMIER ELEMENT D'UN TABLEAU </p>
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Créer une fonction from scratch qui s'appelle premierElementTableau().<br>
+                                                       Elle prendra un argument de type array. Elle devra retourner le premier élement du tableau.<br>
+                                                       Si l'array est vide, il faudra retourner null; <br>
+                                                     
+                                                    </td>
+                                                    <td>
+                                                          function premierElementTableau(array $argument){<br>
+                                                             if(is_null($argument)){<br>
+                                                                  return 'null';<br>
+                                                            }else{<br>
+                                                                  return $argument[0];<br>
+                                                            }
+                                                        }
+                                                    
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+                                     <p>DERNIER ELEMENT D'UN TABLEAU </p>
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Créer une fonction from scratch qui s'appelle dernierElementTableau().<br>
+                                                       Elle prendra un argument de type array. Elle devra retourner le dernier élement du tableau. <br>
+                                                        Si l'array est vide, il faudra retourner null; <br>
+                                                     
+                                                    </td>
+                                                    <td>
+                                                       function dernierElementTableau(array $argument){<br>
+                                                               if(is_null($argument)){<br>
+                                                                 return 'null';<br>
+                                                            }else{<br>
+                                                                   return $argument[array_key_last($argument)];<br>
+                                                            }
+                                                        }
+                                                    
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+
+                                      <p>PLUS GRAND ELEMENT DU TABLEAU</p>
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Créer une fonction from scratch qui s'appelle plusGrand().<br>
+                                                     . Elle prendra un argument de type array. Elle devra retourner le plus grand des éléments présents dans l'array.  <br>
+                                                       Si l'array est vide, il faudra retourner null;<br>
+                                                     
+                                                    </td>
+                                                    <td>
+                                                        function plusGrand(array $argument){<br>
+                                                             if(is_null($argument)){<br>
+                                                                   return 'null';<br>
+                                                            }else{<br>
+                                                                  $toto= asort($argument);<br>
+                                                                return $argument[array_key_last($argument)];<br>
+                                                            }
+                                                        }
+                                                    
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+
+                                      <p>PLUS PETIT ELEMENT DU TABLEAU</p>
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Créer une fonction from scratch qui s'appelle plusPetit().<br>
+                                                     . Elle prendra un argument de type array. Elle devra retourner le plus petit des éléments présents dans l'array.  <br>
+                                                       Si l'array est vide, il faudra retourner null;<br>
+                                                     
+                                                    </td>
+                                                    <td>
+                                                       function plusPetit(array $argument){<br>
+                                                             if(is_null($argument)){<br>
+                                                                   return 'null';<br>
+                                                            }else{<br>
+                                                                 rsort($argument);<br>
+                                                                return $argument[array_key_last($argument)];<br>
+                                                            }
+                                                        }
+                                                    
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+
+
+
+                                      <p>EXISTENCE D'UNE CLE</p>
+                                   <div class="table-responsive">
+                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>ENONCE</th>
+                                                    <th>REPONSE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                     <td>Il faut vérifier qu'une clé existe dans le tableau associatif $tableau<br>
+                                                        Si la clé $cle existe la variable $res sera TRUE sinon FALSE. <br>
+                                                    </td>
+                                                    <td>
+                                                         if(in_array($cle,array_keys($tableau))){<br>
+                                                                   $res = true;<br>
+                                                            }else{<br>
+                                                                 $res = false;<br>
+                                                            }
+                                                    </td>
+                                                </tr>
+                                             </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+
+{% endblock %}
